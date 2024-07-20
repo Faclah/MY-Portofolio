@@ -1,0 +1,170 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.project {
+  background: #f4f4f4;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.profile-pic {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  object-fit: cover; /* Ensures the image retains its aspect ratio and fits within the defined area */
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensures the image retains its aspect ratio and fits within the defined area */
+}
+
+form label {
+  display: block;
+  margin: 0.5rem 0 0.2rem;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  padding: 0.7rem;
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+/* Media Queries for Responsiveness */
+
+/* Tablets and up */
+@media (min-width: 600px) {
+  .container {
+    width: 90%;
+  }
+
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+  }
+
+  nav ul {
+    text-align: left;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin-right: 1.5rem;
+  }
+}
+
+/* Desktops and up */
+@media (min-width: 992px) {
+  .container {
+    width: 70%;
+  }
+
+  header h1 {
+    text-align: left;
+    margin-left: 2rem;
+  }
+
+  nav ul {
+    text-align: right;
+  }
+
+  section {
+    padding: 3rem 0;
+  }
+
+  .project {
+    display: flex;
+    align-items: center;
+  }
+
+  .project-img {
+    max-width: 50%;
+    margin-right: 1rem;
+  }
+
+  .project p {
+    flex: 1;
+  }
+
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  form button {
+    width: auto;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
